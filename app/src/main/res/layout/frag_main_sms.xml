@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="454dp"
+        android:layout_weight="0.58"
+        android:background="#15181c"
+        android:orientation="vertical"
+        android:weightSum="20" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvMensagens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="10.0sp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+        <!-- <View -->
+        <!-- android:layout_width="3dip" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="#542733" /> -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:background="#8a8989" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/etSendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="8"
+                android:ems="10"
+                android:hint="Type message"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:textColor="#8a8989"
+                android:textColorHint="#8a8989" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/btSendMensage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="2dp"
+                android:src="@android:drawable/ic_dialog_email" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+ android:padding="8dp" >
+
+<TextView
+    android:id="@+id/tv_other_user"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="1"
+        android:gravity="center"
+    android:textSize="18sp" />
+
+
+</RelativeLayout>

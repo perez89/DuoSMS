@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/cb_power_saver"
+            android:text="Optimize battery life"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/cb_vibration"
+            android:text="Vibration feedback"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cb_power_saver"
+            android:layout_below="@+id/cb_Del_Old_SMS"
+            android:layout_marginLeft="43dp"
+            android:text="Text message limit - 500"
+            android:textSize="12dp" />
+
+<!--         <CheckBox -->
+<!--             android:id="@+id/cb_delivery" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_below="@+id/textView1" -->
+<!--             android:onClick="true" -->
+<!--             android:text="Delivery reports" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/TextView03" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignLeft="@+id/textView1" -->
+<!--             android:layout_below="@+id/cb_delivery" -->
+<!--             android:text="Request a delivery report for each SMS you send" -->
+<!--             android:textSize="12dp" /> -->
+
+        <CheckBox
+            android:id="@+id/cb_power_saver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:onClick="true"
+            android:text="Power saver" />
+
+        <CheckBox
+            android:id="@+id/cb_Notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:onClick="true"
+            android:text="Notifications" />
+
+        <CheckBox
+            android:id="@+id/cb_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:onClick="true"
+            android:text="Vibration" />
+
+        <CheckBox
+            android:id="@+id/cb_Del_Old_SMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:onClick="true"
+            android:text="Delete old messages" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

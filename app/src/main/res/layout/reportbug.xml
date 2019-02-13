@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_Report_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:padding="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_Report_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/bt_Set"
+        android:layout_toLeftOf="@+id/bt_Set"
+        android:ems="10"
+        android:maxLength="256" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+ 
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/bt_Send_Report"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_Set"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Send Report" />
+
+    
+
+</RelativeLayout>
